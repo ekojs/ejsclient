@@ -1,0 +1,22 @@
+{
+    "name": "ekojs/ejsclient",
+    "description": "Custom client using guzzle",
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Ekojs\\Library\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eko Junaidi Salam",
+            "email": "eko.junaidi.salam@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+	"php": ">=7.3",
+        "guzzlehttp/guzzle": "^7.4",
+        "google/recaptcha": "^1.2"
+    }
+}
