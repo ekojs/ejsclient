@@ -63,6 +63,14 @@ class EJSClient {
         return self::$instance;
     }
 
+    public function setParameters(array $params){
+	    $this->token = $params['token'];
+	    $this->customKeyHeader = $params['customKeyHeader'];
+	    $this->numRetries = $params['numRetries'];
+	    $this->timeout = $params['timeout'];
+	    return $this;
+    }
+
     // Based on issue https://github.com/guzzle/guzzle/issues/1806
     public function retryDecider() {
         return function (
